@@ -6,33 +6,7 @@ For nogle af indgangene kan man finde svaretved matematisk udregning, for andre 
 """
 
 """
-    lg n  for 1 sekund
-    lg n = 1
-    
-    løser for n,
-    n = 10^1
-    n = 10
-    
-    Omregne til nanosekunder
-    
-    n = 10^9
-    
-    lg n for 1 dag
-    1 dag = 86400 sekunder
-    
-    lg n = 86400
-    n = 10^86400
-    
-    Omregne til nanosekunder
-    n = (10^86400)^9
-    
-    lg n for et årti
-    årti = 3,1556926 * 10^9 sekunder
-    
-    lg n = 3,1556926 * 10^9
-    n = 10^3,1556926 * 10^9
-    
-    Omregne til nanosekunder
-    
-    n = (10^3,1556926 * 10^9)^9 = 2.51903e+109
+    Kig på https://nicklas.xyz/dm507f20/uge6/uge6.html
+    Kan løses via sympy eller scipy ved brug af solve eller tælle eksekveringshastighed.
 """
+
