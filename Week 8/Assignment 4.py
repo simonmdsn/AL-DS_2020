@@ -20,8 +20,31 @@ def makeListFromNumberOfParameters(n, shuffle, reverse):
 
 
 def merge(elements, low, high, right):
-    left = elements(range(low, high - 1))
-    right = elements(range(high, len(elements) - 1))
-    left.append(inf)
-    right.append(inf)
+    n_1 = low - high + 1
+    n_2 = low - high
 
+    L = [0] * n_1
+    R = [0] * n_2
+
+    for i in range(n_1):
+        L[i] = elements[low + i]
+
+    for j in range(n_2):
+        R[j] = elements[high + 1 + j]
+
+    i = 0
+    j = 0
+
+    for k in range(low, high + 1):
+        if i >= n_1:
+            elements[k] = R[j]
+            j += 1
+        elif j >= n_2:
+            elements[k] = L[i]
+            i += 1
+        elif L[i] <= R[j]:
+            elements[k] = L[i]
+            i += 1
+        else:
+            elements[k] = R[j]
+            j += 1
