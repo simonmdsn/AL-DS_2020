@@ -18,7 +18,7 @@ def partiton(A, p, r):
     x = A[r]
     i = p - 1
     for p in range(r - 1):
-        if A[p] <= x and i < math.floor(r):
+        if A[p] < x:
             i = i + 1
             A[i] = A[p]
     A[i + 1] = A[r]
