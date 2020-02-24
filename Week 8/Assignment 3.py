@@ -27,4 +27,5 @@ Hvilke af følgende fem udsagn er sande?
 """
     5. n! ∈ ω(2^n)
     2^n / n! <-> 2^n-1 / (n-1)*(n-2)...3 * 2 * 1 <-> VED IKKE, hvad man skal gøre
+    SAND
 """

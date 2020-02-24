@@ -18,7 +18,7 @@ Dette vil være sand, da summen af 2 øvre grænser altid vil være større.
 """
 (b) g1(n) + g2(n) ∈ Ω(f1(n) + f2(n))
 
-Da opgaven beskriver, at f1(n)∈ O(g1(n)) og f2(n)∈ O(g2(n)), kan vi anvende omskrivningen f(n) = O(g(n)) <-> g(n) = Ω(f(n))
+Da opgaven beskriver, at f1(n)∈ O(g1(n)) og f2(n)∈ O(g2(n)), kan vi anvende omskrivningen f(n) = O(g(n)) <-> g(n) = Ω(f(n))hn b  
 
 Altså må den være sand.
 """
@@ -26,6 +26,6 @@ Altså må den være sand.
 """
 (c) ( f1(n) / f2(n) ) ∈ O ( g1(n) / g2(n) )
 
-Falsk. Modeksempel: f1(n^3), f2(n^2), g1(n^2), g2(n). n er ikke en øvre grænse for n.
+Falsk. Modeksempel: f1(n^2), f2(n), g1(n^2), g2(n^2). n er ikke en øvre grænse for n.
 """
 
