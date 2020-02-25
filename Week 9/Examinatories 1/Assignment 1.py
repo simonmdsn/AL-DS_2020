@@ -9,3 +9,7 @@ Partitioning: reorder the array so that all elements with values less than the p
 while all elements with values greater than the pivot come after it (equal values can go either way).
 After this partitioning, the pivot is in its final position. This is called the partition operation.
 """
+
+"""
+13,19´´ 
+"""

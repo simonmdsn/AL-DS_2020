@@ -14,13 +14,18 @@ Modify PARTITION so that q = [(p + r / 2)] when all elements in the array A[p..r
 """
 import math
 
-def partiton(A, p, r):
+def partition(A, p, r):
     x = A[r]
     i = p - 1
+    c = 0
     for p in range(r - 1):
         if A[p] < x:
             i = i + 1
             A[i] = A[p]
+        elif A[j] == x:
+            if c%2 == 0:
+                i = i + 1
+                A[i] = A[j]
     A[i + 1] = A[r]
     return i + 1
 
