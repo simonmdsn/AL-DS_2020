@@ -1,6 +1,8 @@
 """
-
+Implementer quicksort
 """
+
+
 def partition(A, p, r):
     x = A[r]
     i = p - 1
